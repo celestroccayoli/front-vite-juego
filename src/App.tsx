@@ -1,8 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 
-// Definimos las preguntas por categoría (50 preguntas por personaje)
-const preguntas = {
+// Definimos las preguntas por categoría con firma de índice
+interface Preguntas {
+  [key: string]: string[];
+}
+
+const preguntas: Preguntas = {
   Nova: [
     '¿Qué sentís cuando te abrazan?',
     '¿Qué hacés de manera forzada?',
@@ -102,11 +106,11 @@ const preguntas = {
     '¿En qué momento te sentís vos mism@?',
     '¿Cómo te describirían tus amigos en 3 palabras?',
     'Te preparás para una noche perfecta, ¿qué te ponés?',
-    '¿Qué es lo mejor de crecer?', // Reubicada para completar las 50
-    '¿Qué hacen los demás que a vos también te gustaría hacer?', // Reubicada para completar las 50
-    'Si pudieras ser la mejor en algo, ¿en qué sería?', // Reubicada para completar las 50
-    '¿En qué sos bueno/a?', // Reubicada para completar las 50
-    '¿Qué te gusta hacer en tu tiempo libre?', // Reubicada para completar las 50
+    '¿Qué es lo mejor de crecer?',
+    '¿Qué hacen los demás que a vos también te gustaría hacer?',
+    'Si pudieras ser la mejor en algo, ¿en qué sería?',
+    '¿En qué sos bueno/a?',
+    '¿Qué te gusta hacer en tu tiempo libre?',
   ],
   Mesias: [
     '¿Qué es para vos tener éxito en la vida?',
@@ -165,9 +169,9 @@ const preguntas = {
 
 // Mapa de colores por categoría
 const coloresCategoria: { [key: string]: string } = {
-  Nova: '#d9c0c9',   // Rosa claro
-  Galileo: '#f3caad', // Naranja claro
-  Mesias: '#cbe3df',  // Verde agua claro
+  Nova: '#d9c0c9',
+  Galileo: '#f3caad',
+  Mesias: '#cbe3df',
 };
 
 const App: React.FC = () => {
@@ -176,14 +180,13 @@ const App: React.FC = () => {
   const [contadorPreguntas, setContadorPreguntas] = useState<number>(0);
   const [girando, setGirando] = useState<boolean>(false);
   const [mostrarCarta, setMostrarCarta] = useState<boolean>(false);
-  const [cartaKey, setCartaKey] = useState<number>(0); // Para reiniciar la animación
+  const [cartaKey, setCartaKey] = useState<number>(0);
   const [preguntasUsadas, setPreguntasUsadas] = useState<{ [key: string]: number[] }>({
     Nova: [],
     Galileo: [],
     Mesias: [],
   });
 
-  // Cargar preguntas usadas desde sessionStorage al iniciar
   useEffect(() => {
     const usadas = sessionStorage.getItem('preguntasUsadas');
     if (usadas) {
@@ -195,7 +198,6 @@ const App: React.FC = () => {
     }
   }, []);
 
-  // Guardar preguntas usadas y contador en sessionStorage
   useEffect(() => {
     sessionStorage.setItem('preguntasUsadas', JSON.stringify(preguntasUsadas));
     sessionStorage.setItem('contadorPreguntas', contadorPreguntas.toString());
@@ -204,39 +206,34 @@ const App: React.FC = () => {
   const girarRuleta = () => {
     if (girando) return;
     setGirando(true);
-    setMostrarCarta(false); // Ocultar la carta mientras gira
+    setMostrarCarta(false);
 
-    // Simulamos el giro con una rotación aleatoria
-    const rotaciones = Math.floor(Math.random() * 5) + 5; // Entre 5 y 9 rotaciones completas
-    const gradosExtra = Math.floor(Math.random() * 360); // Grados adicionales
+    const rotaciones = Math.floor(Math.random() * 5) + 5;
+    const gradosExtra = Math.floor(Math.random() * 360);
     const totalGrados = rotaciones * 360 + gradosExtra;
 
-    // Aplicamos la animación a la ruleta
     const ruleta = document.getElementById('ruleta');
     if (ruleta) {
       ruleta.style.transform = `rotate(${totalGrados}deg)`;
     }
 
-    // Determinar categoría según el ángulo final, ajustado para la posición inferior derecha (315°)
     setTimeout(() => {
-      const anguloFinal = (gradosExtra + 315) % 360; // Ajustamos el ángulo para que el segmento seleccionado esté en 315° (inferior derecha)
+      const anguloFinal = (gradosExtra + 315) % 360;
       let categoria: string;
       if (anguloFinal < 120) {
-        categoria = 'Nova'; // Primer segmento (rosa claro)
+        categoria = 'Nova';
       } else if (anguloFinal < 240) {
-        categoria = 'Galileo'; // Segundo segmento (naranja claro)
+        categoria = 'Galileo';
       } else {
-        categoria = 'Mesias'; // Tercer segmento (verde agua claro)
+        categoria = 'Mesias';
       }
       setCategoriaSeleccionada(categoria);
 
-      // Seleccionar pregunta aleatoria no repetida
       const indicesDisponibles = preguntas[categoria]
-        .map((_, index) => index)
+        .map((_: string, index: number) => index)
         .filter((index) => !preguntasUsadas[categoria].includes(index));
 
       if (indicesDisponibles.length === 0) {
-        // Reiniciar preguntas usadas si se agotaron
         setPreguntasUsadas((prev) => ({ ...prev, [categoria]: [] }));
         seleccionarPregunta(categoria, []);
       } else {
@@ -247,17 +244,17 @@ const App: React.FC = () => {
         }));
         setPreguntaActual(preguntas[categoria][indiceAleatorio]);
         setContadorPreguntas((prev) => prev + 1);
-        setCartaKey((prev) => prev + 1); // Cambiar la clave para reiniciar la animación
-        setMostrarCarta(true); // Mostrar la carta después de seleccionar la pregunta
+        setCartaKey((prev) => prev + 1);
+        setMostrarCarta(true);
       }
 
       setGirando(false);
-    }, 4000); // Duración de la animación
+    }, 4000);
   };
 
   const seleccionarPregunta = (categoria: string, usadas: number[]) => {
     const indicesDisponibles = preguntas[categoria]
-      .map((_, index) => index)
+      .map((_: string, index: number) => index)
       .filter((index) => !usadas.includes(index));
     const indiceAleatorio = indicesDisponibles[Math.floor(Math.random() * indicesDisponibles.length)];
     setPreguntasUsadas((prev) => ({
@@ -266,11 +263,10 @@ const App: React.FC = () => {
     }));
     setPreguntaActual(preguntas[categoria][indiceAleatorio]);
     setContadorPreguntas((prev) => prev + 1);
-    setCartaKey((prev) => prev + 1); // Cambiar la clave para reiniciar la animación
+    setCartaKey((prev) => prev + 1);
     setMostrarCarta(true);
   };
 
-  // Determinar el color de fondo de la carta según la categoría
   const cartaColor = categoriaSeleccionada ? coloresCategoria[categoriaSeleccionada] : '#f3caad';
 
   return (
@@ -278,56 +274,50 @@ const App: React.FC = () => {
       <h2 className="text-4xl font-bold mb-4 text-center">Interconectados</h2>
       <p className="mb-4 text-center">Preguntas jugadas: {contadorPreguntas}</p>
 
-      {/* Ruleta */}
       <div className="ruleta-container mb-8">
         <div
           id="ruleta"
           className="w-64 h-64 rounded-full transition-transform duration-[4000ms] ease-out"
         />
-        {/* <div id="indicador" className="indicador" /> */}
         <div className="centro-ruleta">
           {girando ? 'Girando' : 'Listo'}
         </div>
       </div>
 
-      {/* Botón de girar */}
       {!mostrarCarta && (
-                  <div className='content-button mt-8'>
-                    <br />
-        <button
-          onClick={girarRuleta}
-          className={`px-6 py-3 font-semibold boton ${girando ? 'cursor-not-allowed' : 'hover:opacity-90'}`}
-          disabled={girando}
-        >
-          Girar la ruleta
-        </button>
+        <div className='content-button mt-8'>
+          <br />
+          <button
+            onClick={girarRuleta}
+            className={`px-6 py-3 font-semibold boton ${girando ? 'cursor-not-allowed' : 'hover:opacity-90'}`}
+            disabled={girando}
+          >
+            Girar la ruleta
+          </button>
         </div>
       )}
 
-      {/* Carta con pregunta */}
       {categoriaSeleccionada && preguntaActual && mostrarCarta && (
-        <div className=" w-80 flex flex-col items-center">
+        <div className="w-80 flex flex-col items-center">
           <div key={cartaKey} className="relative w-full h-48 perspective-1000">
             <div className="relative w-full h-full transition-transform duration-1000 transform-style-preserve-3d animate-flip">
-              {/* Lado frontal: reverso genérico */}
               <div className="absolute w-full h-full backface-hidden carta flex items-center justify-center p-4" style={{ backgroundColor: "transparent" }}>
-                <div className="w-full h-full bg-opacity-80 rounded-[30px]" style={{ backgroundColor: cartaColor }} /> {/* Reverso genérico */}
+                <div className="w-full h-full bg-opacity-80 rounded-[30px]" style={{ backgroundColor: cartaColor }} />
               </div>
-              {/* Lado trasero: pregunta con "[categoría]" */}
               <div className="absolute w-full h-full backface-hidden carta flex flex-col p-4 transform rotate-y-180 text-center" style={{ backgroundColor: cartaColor }}>
-                <p className="text-sm font-semibold">{categoriaSeleccionada}</p> {/* Solo el nombre de la categoría, centrado */}
-                <h3 className="text-lg flex-1 flex items-center justify-center font-bold"> <strong>{preguntaActual}</strong></h3>
+                <p className="text-sm font-semibold">{categoriaSeleccionada}</p>
+                <h3 className="text-lg flex-1 flex items-center justify-center font-bold"><strong>{preguntaActual}</strong></h3>
               </div>
             </div>
           </div>
           <div className='content-button'>
-          <button
-            onClick={girarRuleta}
-            className={`mt-4 px-6 py-3 font-semibold boton ${girando ? 'cursor-not-allowed' : 'hover:opacity-90'}`}
-            disabled={girando}
-          >
-            Nueva pregunta
-          </button>
+            <button
+              onClick={girarRuleta}
+              className={`mt-4 px-6 py-3 font-semibold boton ${girando ? 'cursor-not-allowed' : 'hover:opacity-90'}`}
+              disabled={girando}
+            >
+              Nueva pregunta
+            </button>
           </div>
         </div>
       )}
