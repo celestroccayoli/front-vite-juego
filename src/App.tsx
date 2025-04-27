@@ -84,7 +84,7 @@ const preguntas: Preguntas = {
     'Si tu vida fuera una película, ¿qué tipo de personaje serías?',
     'Si tu vida fuera una película, ¿de qué género sería?',
     'Si pudieras agregar una actividad en tu rutina diaria, ¿qué sería?',
-    'No podrías vivir sin',
+    'No podrías vivir sin...',
     '¿Qué oportunidad te gustaría tener?',
     '¿Con qué emoción te relacionás más?',
     '¿Cómo te gusta aprovechar el tiempo?',
@@ -321,6 +321,7 @@ const App: React.FC = () => {
           </div>
         </div>
       )}
+      
     </div>
   );
 };
