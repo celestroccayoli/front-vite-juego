@@ -272,8 +272,6 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center">
       <h2 className="text-4xl font-bold mb-4 text-center">Interconectados</h2>
-      <p className="mb-4 text-center">Preguntas jugadas: {contadorPreguntas}</p>
-
       <div className="ruleta-container mb-8">
         <div
           id="ruleta"
@@ -310,6 +308,7 @@ const App: React.FC = () => {
               </div>
             </div>
           </div>
+          <p className="mb-4 text-center xs"  style={{ color: "grey", fontSize: "xs" }} >Preguntas jugadas: {contadorPreguntas}</p>
           <div className='content-button'>
             <button
               onClick={girarRuleta}
