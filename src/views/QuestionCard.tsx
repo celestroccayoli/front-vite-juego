@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useLocation, useNavigate, useParams } from 'react-router-dom';
+import { useLocation, useParams } from 'react-router-dom';
 import questionsData from '../data/questions';
 
 interface LocationState {
@@ -8,7 +8,6 @@ interface LocationState {
 
 const QuestionCard: React.FC = () => {
   const { categoryId } = useParams<{ categoryId: string }>();
-  const navigate = useNavigate();
   const location = useLocation();
   const { color } = location.state as LocationState;
 
