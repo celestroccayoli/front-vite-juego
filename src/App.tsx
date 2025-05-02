@@ -147,7 +147,7 @@ const preguntas: Preguntas = {
     'Nombra tres cualidades que te gustan de vos.',
     '¿Cuál es la última lección que aprendiste?',
     '¿Cómo ves el futuro?',
-    '¿Qué te gustaría volver a intentar?',
+    '¿Qué te gustaría volver to intentar?',
     '¿Qué define tu identidad?',
     '¿Cuál es el mejor consejo que te dieron?',
     '¿Qué es lo más importante para vos en este momento?',
@@ -312,7 +312,7 @@ const App: React.FC = () => {
       <div className="ruleta-container mb-8">
         <div
           id="ruleta"
-          className="w-64 h-64 rounded-full transition-transform duration-[4000ms] ease-out"
+          className="w-52 h-52 rounded-full transition-transform duration-[4000ms] ease-out"
           onClick={mostrarCarta ? nuevaPregunta : girarRuleta}
           style={{ cursor: girando ? 'not-allowed' : 'pointer' }}
         />
@@ -335,14 +335,13 @@ const App: React.FC = () => {
       )}
 
       {categoriaSeleccionada && preguntaActual && mostrarCarta && (
-        <div className="w-80 flex flex-col items-center">
-          <div key={cartaKey} className="relative w-full h-48 perspective-1000">
+        <div className="w-96 flex flex-col items-center">
+          <div key={cartaKey} className="relative w-full h-60 perspective-1000">
             <div className="relative w-full h-full transition-transform duration-1000 transform-style-preserve-3d animate-flip">
               <div className="absolute w-full h-full backface-hidden flex items-center justify-center p-4" style={{ backgroundColor: "transparent" }}>
                 <div className="w-full h-full bg-opacity-80 rounded-[30px]" style={{ backgroundColor: cartaColor }} />
               </div>
               <div className="absolute w-full h-full backface-hidden carta flex flex-col p-4 transform rotate-y-180 text-center" style={{ backgroundColor: cartaColor }}>
-                {/* <p className="text-sm font-semibold">{categoriaSeleccionada}</p> */}
                 <h3 className="text-lg flex-1 flex items-center justify-center font-bold"><strong>{preguntaActual}</strong></h3>
               </div>
             </div>
