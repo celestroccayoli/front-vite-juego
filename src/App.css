@@ -32,12 +32,12 @@
   height: 204px;
   border-radius: 50%;
   background: conic-gradient(
-    #d9c0c9 0deg 60deg,    /* Rosa claro - Nova */
-    #f3caad 60deg 120deg,  /* Naranja claro - Galileo */
-    #cbe3df 120deg 180deg, /* Verde agua claro - Mesias */
-    #e3d5f1 180deg 240deg, /* Lila claro - Luna */
-    #f9e8b3 240deg 300deg, /* Amarillo pálido - Sol */
-    #c6e2f5 300deg 360deg  /* Azul suave - Estrella */
+    #d9c0c9 0deg 60deg,    /* Rosa claro - Autoconocimiento */
+    #f3caad 60deg 120deg,  /* Naranja claro - Reflexión */
+    #cbe3df 120deg 180deg, /* Verde agua claro - Deseos */
+    #e3d5f1 180deg 240deg, /* Lila claro - Presente */
+    #f9e8b3 240deg 300deg, /* Amarillo pálido - Futuro */
+    #c6e2f5 300deg 360deg  /* Azul suave - Relaciones */
   );
   transition: transform 4s ease-out;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -123,7 +123,7 @@ h2, h3, p {
 .carta {
   background-color: #f3caad; /* Naranja claro */
   border-radius: 30px; /* Esquinas redondeadas */
-  padding: 30px 40px;
+  padding: 30px;
   margin: 4% auto;
   width: 300px;
 }
@@ -132,9 +132,7 @@ h2, h3, p {
 .carta p {
   color: #681c7c; /* Morado oscuro para el texto */
 }
-p.text-sm.font-semibold.categ {
-  margin: 0;
-}
+
 .content-button {
   width: 100%;
   display: flex;

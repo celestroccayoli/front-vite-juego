@@ -7,13 +7,10 @@ interface Preguntas {
 }
 
 const preguntas: Preguntas = {
-  Nova: [
+  Autoconocimiento: [
     '¿Qué sentís cuando te abrazan?',
-    '¿Qué hacés de manera forzada?',
     '¿Cómo te gusta afrontar el miedo?',
     '¿Qué te gustaría cambiar de vos mismo/a?',
-    '¿Qué querés hacer pero lo estás postergando?',
-    '¿Qué necesitás aprender?',
     '¿Qué harías si no tuvieras miedo?',
     '¿Qué relación tenés con tu cuerpo?',
     '¿Cómo reaccionás cuando alguien te felicita?',
@@ -21,164 +18,163 @@ const preguntas: Preguntas = {
     '¿Cómo te sentís cuando pedís ayuda?',
     '¿Preferís el tiempo a solas o en compañía?',
     '¿Qué hacés cuando estás sola?',
+    '¿Qué es lo más valiente que hiciste?',
+    '¿Cómo es tu diálogo interno?',
+    '¿Qué ves de vos en los demás?',
+    '¿Qué hacés cuando estás muy contento?',
+    '¿Qué actividad te ayuda a encontrar la paz?',
+    '¿Qué tipo de persona sos?',
+    '¿Te gusta la persona que sos? ¿Por qué?',
+    '¿En qué momento te sentís vos mism@?',
+    '¿Cómo te describirían tus amigos en 3 palabras?',
+    'Nombra tres cualidades que te gustan de vos.',
+    '¿Qué define tu identidad?',
+    '¿En qué sos bueno/a?',
+    '¿Con qué emoción te relacionás más?',
+    '¿Qué no negociás?',
+    '¿Qué te atrae?',
+  ],
+  Reflexión: [
+    '¿Qué hacés de manera forzada?',
+    '¿Qué necesitás aprender?',
     '¿Cómo te gustaría que actúen los demás cuando estás enojada/o?',
-    '¿Qué pensás que dicen tus amistades de vos?',
-    '¿A quién necesitás pedirle perdón?',
-    '¿Cómo te sentís hoy?',
-    '¿En qué necesitás ayuda en este momento?',
-    '¿Con quién no estuviste de acuerdo recientemente?',
     '¿Cuánto peso le das a lo que la gente piensa de vos?',
     '¿A qué deberías prestarle más atención?',
     '¿En qué área de tu vida estás poniendo más energía?',
-    '¿Qué es lo más valiente que hiciste?',
-    '¿Cómo es tu diálogo interno?',
     '¿Cuál es tu situación actual?',
-  ],
-  Galileo: [
     '¿Qué es lo mejor de crecer?',
-    '¿Qué hacen los demás que a vos también te gustaría hacer?',
-    'Si pudieras ser la mejor en algo, ¿en qué sería?',
-    '¿En qué sos bueno/a?',
-    '¿Qué te gusta hacer en tu tiempo libre?',
-    '¿Qué te haría sentir contento/a hoy?',
-    '¿Cuál es tu objetivo para hoy?',
-    '¿Cómo sería tu día perfecto?',
-    '¿Cómo te gusta comenzar el día?',
-    '¿Cuál es tu objetivo para esta semana?',
-    '¿Qué viaje te gustaría hacer?',
-    '¿Quién es tu héroe?',
     '¿Qué pensás que tiene de bueno ser adulto/a?',
-    'Si pudieras ser un animal, ¿cuál serías y por qué?',
-    '¿Cuál fue tu último logro?',
-    '¿Cómo te gusta ser recompensada?',
-    '¿Qué te hizo feliz hoy?',
-    '¿Qué te gustaría sentir hoy?',
-    '¿Qué te enorgullece hoy?',
-    '¿Qué actividades aumentan tu energía?',
     'Si tu vida fuera una película, ¿qué tipo de personaje serías?',
     'Si tu vida fuera una película, ¿de qué género sería?',
-    'Si pudieras agregar una actividad en tu rutina diaria, ¿qué sería?',
     'No podrías vivir sin...',
-    '¿Qué oportunidad te gustaría tener?',
-  ],
-  Mesias: [
-    '¿Qué es para vos tener éxito en la vida?',
-    '¿Cómo te gustaría ser recordado/a?',
-    '¿Cuál es tu deseo más grande?',
-    '¿Qué te motiva?',
-    '¿A qué te gustaría dedicarle más tiempo?',
-    '¿En qué te gustaría asumir más responsabilidad?',
-    '¿A qué te gustaría dedicarte?',
-    '¿Cuál es tu aspiración más importante?',
-    '¿Cuál es tu prioridad en este momento de tu vida?',
-    '¿Qué quieres cambiar de tu vida? ¿Por qué?',
-    '¿Cómo te imaginás tu vida en 5 años?',
-    '¿Qué querés que te pase este año?',
-    '¿Qué quisieras hacer pero te da miedo intentar?',
-    '¿Cuál es el logro que más te enorgullece?',
-    '¿Cómo te gustaría vivir hoy si fuera tu último día?',
-    '¿Qué te hace sentir seguridad?',
-    '¿Qué significa para vos la responsabilidad?',
-    '¿Qué es lo que realmente te interesa?',
-    '¿Qué le diría tu yo del presente a tu yo del futuro?',
-    '¿Qué te dice tu voz interior?',
-    '¿Qué necesitás?',
-    '¿Qué estás haciendo hoy para ser la persona que querés ser?',
     '¿Qué es el amor?',
     '¿Qué puede aprender el mundo de vos?',
-    '¿En qué momentos te sentís libre?',
-  ],
-  Luna: [
-    '¿Te gusta la persona que sos? ¿Por qué?',
-    '¿De qué manera expresás amor?',
     '¿Dónde vivís más: en el pasado, en el presente o en el futuro?',
-    '¿Cuál es la característica que considerás más importante en una persona?',
     '¿Qué es lo que siempre quisiste hacer y aún no hiciste?',
-    '¿Qué aspecto de tu vida querés conservar en el futuro?',
-    'Nombra tres cualidades que te gustan de vos.',
-    '¿Cuál es la última lección que aprendiste?',
-    '¿Cómo ves el futuro?',
-    '¿Qué te gustaría volver to intentar?',
-    '¿Qué define tu identidad?',
-    '¿Cuál es el mejor consejo que te dieron?',
-    '¿Qué es lo más importante para vos en este momento?',
     '¿Qué es la libertad para vos?',
     'Para vos, ¿cuál es el sentido de la vida?',
     'Para vos, ¿qué es la intuición?',
     '¿Qué significa para vos el vacío/la nada?',
     '¿Qué significa para vos la palabra "religión"?',
     '¿Qué define "hogar" para vos?',
-    '¿Qué crees que tiene la vida para vos?',
-    '¿Qué anhela tu corazón?',
-    '¿Qué estilo de vida te gustaría tener?',
-    '¿Qué cambio te gustaría presenciar?',
-    '¿Qué hecho te gustaría presenciar?',
-    '¿Qué es lo que más te importa en este momento?',
+    'Si te digo "aire" ¿en qué pensás?',
+    '¿En qué animal te gustaría reencarnar?',
+    '¿Cómo describirías tu relación con la naturaleza?',
   ],
-  Sol: [
-    '¿Qué ves de vos en los demás?',
+  Deseos: [
+    '¿Qué querés hacer pero lo estás postergando?',
     '¿Con qué soñás?',
-    '¿Qué hacés cuando estás muy contento?',
-    '¿Cuál fue el último cambio que hiciste en tu vida?',
-    '¿Cuál fue la mejor decisión que tomaste en la vida?',
-    '¿Qué decisión te cambió la vida?',
-    '¿Quién en tu vida te inspira a ser mejor?',
-    '¿Qué te sorprende de vos mismo últimamente?',
-    '¿Qué actividad te ayuda a encontrar la paz?',
-    '¿Qué tipo de persona sos?',
+    '¿Qué es para vos tener éxito en la vida?',
+    '¿Cuál es tu deseo más grande?',
+    '¿Qué te motiva?',
+    '¿A qué te gustaría dedicarle más tiempo?',
+    '¿En qué te gustaría asumir más responsabilidad?',
+    '¿A qué te gustaría dedicarte?',
+    '¿Cuál es tu aspiración más importante?',
+    '¿Qué quisieras hacer pero te da miedo intentar?',
+    '¿Qué te hace sentir seguridad?',
+    '¿Qué es lo que realmente te interesa?',
     '¿Qué estás esperando obtener?',
-    '¿Qué esperás de los otros?',
     '¿Qué esperás obtener con lo que hacés?',
-    '¿Qué atributos valorás en una persona?',
-    '¿Qué hacés para sentirte bien?',
-    '¿Qué hacés para que otro se sienta bien?',
-    '¿A quién admirás y por qué?',
-    '¿De qué te hacés cargo?',
-    '¿Qué te atrae?',
     '¿Qué te gustaría dejar?',
     '¿Qué te falta?',
     '¿Qué estás dispuesto a dejar para conseguir tus objetivos/sueños/metas?',
     '¿A qué recital te hubiese gustado ir?',
-    '¿Cuál fue la mejor pregunta que te hicieron?',
-    '¿Cómo decidís en quién confiar?',
+    '¿Qué viaje te gustaría hacer?',
+    '¿Qué oportunidad te gustaría tener?',
+    '¿Qué anhela tu corazón?',
+    '¿Qué estilo de vida te gustaría tener?',
+    '¿Qué cambio te gustaría presenciar?',
+    '¿Qué hecho te gustaría presenciar?',
+    '¿Qué apasiona en la vida?',
   ],
-  Estrella: [
-    '¿Con qué emoción te relacionás más?',
-    '¿Cómo te gusta aprovechar el tiempo?',
+  Presente: [
+    '¿Cómo te sentís hoy?',
+    '¿En qué necesitás ayuda en este momento?',
+    '¿Con quién no estuviste de acuerdo recientemente?',
+    '¿Qué te hizo feliz hoy?',
+    '¿Qué te gustaría sentir hoy?',
+    '¿Qué te enorgullece hoy?',
+    '¿Qué te haría sentir contento/a hoy?',
+    '¿Cuál es tu objetivo para hoy?',
+    '¿Qué actividades aumentan tu energía?',
+    '¿Qué hacés para sentirte bien?',
+    '¿Qué te entretiene?',
+    '¿Qué te inspira?',
+    '¿Qué disfrutás hacer en tu estación favorita del año?',
+    '¿Qué te gusta hacer antes de dormir?',
+    '¿Qué te gusta hacer cuando te despertás?',
+    '¿Cuál es tu prioridad en este momento de tu vida?',
+    '¿Qué estás haciendo hoy para ser la persona que querés ser?',
+    '¿En qué momentos te sentís libre?',
+    '¿Qué es lo que más te importa en este momento?',
+    '¿Qué te sorprende de vos mismo últimamente?',
     '¿Cuál es tu cable a tierra?',
     '¿Cuál es tu canción favorita?',
-    '¿Qué te entretiene?',
-    'Si te digo "aire" ¿en qué pensás?',
-    '¿En qué animal te gustaría reencarnar?',
-    '¿Qué disfrutás hacer en tu estación favorita del año?',
-    '¿Qué te gusta hacer antes de dormir?',
-    '¿Qué te gusta hacer cuando te despertás?',
-    '¿Qué te inspira?',
-    '¿Qué no negociás?',
-    '¿Cuál es tu próxima meta a cumplir?',
-    '¿Qué tipo de gente te cae bien?',
-    '¿Cuál es tu manera favorita de festejar?',
-    '¿Cómo sería un día ideal para vos?',
-    '¿Qué te apasiona en la vida?',
-    '¿En qué momento te sentís vos mism@?',
-    '¿Cómo te describirían tus amigos en 3 palabras?',
+    '¿Cómo te gusta aprovechar el tiempo?',
+    '¿Qué hacés para que otro se sienta bien?',
     'Te preparás para una noche perfecta, ¿qué te ponés?',
+  ],
+  Futuro: [
+    '¿Cuál fue el último cambio que hiciste en tu vida?',
+    '¿Cuál fue la mejor decisión que tomaste en la vida?',
+    '¿Qué decisión te cambió la vida?',
+    '¿Cómo te imaginás tu vida en 5 años?',
+    '¿Qué querés que te pase este año?',
+    '¿Cuál es el logro que más te enorgullece?',
+    '¿Cómo te gustaría vivir hoy si fuera tu último día?',
+    '¿Qué le diría tu yo del presente a tu yo del futuro?',
+    '¿Qué quieres cambiar de tu vida? ¿Por qué?',
+    '¿Qué aspect de tu vida querés conservar en el futuro?',
+    '¿Cuál es la última lección que aprendiste?',
+    '¿Cómo ves el futuro?',
+    '¿Qué te gustaría volver to intentar?',
+    '¿Cuál es el mejor consejo que te dieron?',
+    '¿Qué crees que tiene la vida para vos?',
+    '¿Cuál es tu objetivo para esta semana?',
+    '¿Cuál es tu próxima meta a cumplir?',
+    '¿Qué esperás de los otros?',
+    'Si pudieras agregar una actividad en tu rutina diaria, ¿qué sería?',
+    '¿Cómo sería tu día perfecto?',
+    '¿Cómo te gusta comenzar el día?',
+    '¿Cómo sería un día ideal para vos?',
+    '¿Qué hacen los demás que a vos también te gustaría hacer?',
+    'Si pudieras ser la mejor en algo, ¿en qué sería?',
+    '¿Cuál es tu manera favorita de festejar?',
+  ],
+  Relaciones: [
+    '¿Qué pensás que dicen tus amistades de vos?',
+    '¿A quién necesitás pedirle perdón?',
+    '¿Quién en tu vida te inspira a ser mejor?',
+    '¿A quién admirás y por qué?',
+    '¿De qué te hacés cargo?',
+    '¿Cuál fue la mejor pregunta que te hicieron?',
+    '¿Cómo decidís en quién confiar?',
+    '¿Qué atributos valorás en una persona?',
+    '¿De qué manera expresás amor?',
+    '¿Cuál es la característica que considerás más importante en una persona?',
+    '¿Qué es lo más importante para vos en este momento?',
+    '¿Qué tipo de gente te cae bien?',
     '¿Qué es lo que más valoras en una amistad?',
-    '¿Cómo describirías tu relación con la naturaleza?',
-    '¿Qué disfrutás hacer en tu estación favorita del año?',
-    '¿Qué te gusta hacer antes de dormir?',
-    '¿Qué te gusta hacer cuando te despertás?',
+    '¿Quién es tu héroe?',
+    'Si pudieras ser un animal, ¿cuál serías y por qué?',
+    '¿Cuál fue tu último logro?',
+    '¿Cómo te gusta ser recompensada?',
+    '¿Qué necesitás?',
+    '¿Qué te dice tu voz interior?',
+    '¿Qué significa para vos la responsabilidad?',
+    '¿Cómo te gustaría ser recordado/a?',
   ],
 };
 
 // Mapa de colores por categoría
 const coloresCategoria: { [key: string]: string } = {
-  Nova: '#d9c0c9',     // Rosa claro
-  Galileo: '#f3caad',  // Naranja claro
-  Mesias: '#cbe3df',   // Verde agua claro
-  Luna: '#e3d5f1',     // Lila claro
-  Sol: '#f9e8b3',      // Amarillo pálido
-  Estrella: '#c6e2f5', // Azul suave
+  Autoconocimiento: '#d9c0c9', // Rosa claro
+  Reflexión: '#f3caad',       // Naranja claro
+  Deseos: '#cbe3df',          // Verde agua claro
+  Presente: '#e3d5f1',        // Lila claro
+  Futuro: '#f9e8b3',          // Amarillo pálido
+  Relaciones: '#c6e2f5',      // Azul suave
 };
 
 const App: React.FC = () => {
@@ -189,12 +185,12 @@ const App: React.FC = () => {
   const [mostrarCarta, setMostrarCarta] = useState<boolean>(false);
   const [cartaKey, setCartaKey] = useState<number>(0);
   const [preguntasUsadas, setPreguntasUsadas] = useState<{ [key: string]: number[] }>({
-    Nova: [],
-    Galileo: [],
-    Mesias: [],
-    Luna: [],
-    Sol: [],
-    Estrella: [],
+    Autoconocimiento: [],
+    Reflexión: [],
+    Deseos: [],
+    Presente: [],
+    Futuro: [],
+    Relaciones: [],
   });
 
   useEffect(() => {
@@ -228,20 +224,20 @@ const App: React.FC = () => {
     }
 
     setTimeout(() => {
-      const anguloFinal = (gradosExtra + 315) % 360;
+      const anguloFinal = gradosExtra % 360; // Simplificamos el cálculo, eliminando el offset
       let categoria: string;
       if (anguloFinal < 60) {
-        categoria = 'Nova';
+        categoria = 'Autoconocimiento';
       } else if (anguloFinal < 120) {
-        categoria = 'Galileo';
+        categoria = 'Reflexión';
       } else if (anguloFinal < 180) {
-        categoria = 'Mesias';
+        categoria = 'Deseos';
       } else if (anguloFinal < 240) {
-        categoria = 'Luna';
+        categoria = 'Presente';
       } else if (anguloFinal < 300) {
-        categoria = 'Sol';
+        categoria = 'Futuro';
       } else {
-        categoria = 'Estrella';
+        categoria = 'Relaciones';
       }
       setCategoriaSeleccionada(categoria);
 
@@ -339,13 +335,14 @@ const App: React.FC = () => {
 
       {!mostrarCarta && (
         <div className='content-button mt-8'>
-          {/* <br />
-          <button
+          <br />
+          <br />
+           {/* <button
             onClick={girarRuleta}
             className={`px-6 py-3 font-semibold boton ${girando ? 'cursor-not-allowed' : 'hover:opacity-90'}`}
             disabled={girando}
           >
-            Girar la ruleta
+            Gira la ruleta
           </button> */}
         </div>
       )}
@@ -358,8 +355,8 @@ const App: React.FC = () => {
                 <div className="w-full h-full bg-opacity-80 rounded-[30px]" style={{ backgroundColor: cartaColor }} />
               </div>
               <div className="absolute w-full h-full backface-hidden carta flex flex-col p-4 transform rotate-y-180 text-center" style={{ backgroundColor: cartaColor }}>
-              {/* <p className="text-sm font-semibold categ">{categoriaSeleccionada}</p> */}
-               <h3 className="text-lg flex-1 flex items-center justify-center font-bold"><strong>{preguntaActual}</strong></h3>
+              <p className="text-sm font-semibold categ">{categoriaSeleccionada}</p>
+                <h3 className="text-lg flex-1 flex items-center justify-center font-bold"><strong>{preguntaActual}</strong></h3>
               </div>
             </div>
           </div>
@@ -380,4 +377,3 @@ const App: React.FC = () => {
 };
 
 export default App;
-
