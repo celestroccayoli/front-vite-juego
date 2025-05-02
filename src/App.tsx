@@ -342,13 +342,13 @@ const App: React.FC = () => {
                 <div className="w-full h-full bg-opacity-80 rounded-[30px]" style={{ backgroundColor: cartaColor }} />
               </div>
               <div className="absolute w-full h-full backface-hidden carta flex flex-col p-4 transform rotate-y-180 text-center" style={{ backgroundColor: cartaColor }}>
-                <p className="text-sm font-semibold">{categoriaSeleccionada}</p>
+                {/* <p className="text-sm font-semibold">{categoriaSeleccionada}</p> */}
                 <h3 className="text-lg flex-1 flex items-center justify-center font-bold"><strong>{preguntaActual}</strong></h3>
               </div>
             </div>
           </div>
           <p className="mb-4 text-center xs" style={{ color: "grey", fontSize: "xs" }}>Preguntas jugadas: {contadorPreguntas}</p>
-          {/* <div className='content-button'>
+          <div className='content-button'>
             <button
               onClick={nuevaPregunta}
               className={`mt-4 px-6 py-3 font-semibold boton ${girando ? 'cursor-not-allowed' : 'hover:opacity-90'}`}
@@ -356,14 +356,7 @@ const App: React.FC = () => {
             >
               Nueva pregunta
             </button>
-            <button
-              onClick={girarRuleta}
-              className={`mt-4 ml-4 px-6 py-3 font-semibold boton ${girando ? 'cursor-not-allowed' : 'hover:opacity-90'}`}
-              disabled={girando}
-            >
-              Girar la ruleta
-            </button>
-          </div> */}
+          </div>
         </div>
       )}
     </div>
