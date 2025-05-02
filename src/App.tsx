@@ -267,6 +267,43 @@ const App: React.FC = () => {
     setMostrarCarta(true);
   };
 
+  const nuevaPregunta = () => {
+    if (!categoriaSeleccionada || girando) return;
+    setGirando(true);
+    setMostrarCarta(false);
+
+    const rotaciones = Math.floor(Math.random() * 5) + 5;
+    const gradosExtra = Math.floor(Math.random() * 360);
+    const totalGrados = rotaciones * 360 + gradosExtra;
+
+    const ruleta = document.getElementById('ruleta');
+    if (ruleta) {
+      ruleta.style.transform = `rotate(${totalGrados}deg)`;
+    }
+
+    setTimeout(() => {
+      const indicesDisponibles = preguntas[categoriaSeleccionada]
+        .map((_: string, index: number) => index)
+        .filter((index) => !preguntasUsadas[categoriaSeleccionada].includes(index));
+
+      if (indicesDisponibles.length === 0) {
+        setPreguntasUsadas((prev) => ({ ...prev, [categoriaSeleccionada]: [] }));
+        seleccionarPregunta(categoriaSeleccionada, []);
+      } else {
+        const indiceAleatorio = indicesDisponibles[Math.floor(Math.random() * indicesDisponibles.length)];
+        setPreguntasUsadas((prev) => ({
+          ...prev,
+          [categoriaSeleccionada]: [...prev[categoriaSeleccionada], indiceAleatorio],
+        }));
+        setPreguntaActual(preguntas[categoriaSeleccionada][indiceAleatorio]);
+        setContadorPreguntas((prev) => prev + 1);
+        setCartaKey((prev) => prev + 1);
+        setMostrarCarta(true);
+      }
+      setGirando(false);
+    }, 4000);
+  };
+
   const cartaColor = categoriaSeleccionada ? coloresCategoria[categoriaSeleccionada] : '#f3caad';
 
   return (
@@ -276,6 +313,8 @@ const App: React.FC = () => {
         <div
           id="ruleta"
           className="w-64 h-64 rounded-full transition-transform duration-[4000ms] ease-out"
+          onClick={mostrarCarta ? nuevaPregunta : girarRuleta}
+          style={{ cursor: girando ? 'not-allowed' : 'pointer' }}
         />
         <div className="centro-ruleta">
           {girando ? 'Girando' : 'Listo'}
@@ -299,7 +338,7 @@ const App: React.FC = () => {
         <div className="w-80 flex flex-col items-center">
           <div key={cartaKey} className="relative w-full h-48 perspective-1000">
             <div className="relative w-full h-full transition-transform duration-1000 transform-style-preserve-3d animate-flip">
-              <div className="absolute w-full h-full backface-hidden carta flex items-center justify-center p-4" style={{ backgroundColor: "transparent" }}>
+              <div className="absolute w-full h-full backface-hidden flex items-center justify-center p-4" style={{ backgroundColor: "transparent" }}>
                 <div className="w-full h-full bg-opacity-80 rounded-[30px]" style={{ backgroundColor: cartaColor }} />
               </div>
               <div className="absolute w-full h-full backface-hidden carta flex flex-col p-4 transform rotate-y-180 text-center" style={{ backgroundColor: cartaColor }}>
@@ -308,19 +347,25 @@ const App: React.FC = () => {
               </div>
             </div>
           </div>
-          <p className="mb-4 text-center xs"  style={{ color: "grey", fontSize: "xs" }} >Preguntas jugadas: {contadorPreguntas}</p>
-          <div className='content-button'>
+          <p className="mb-4 text-center xs" style={{ color: "grey", fontSize: "xs" }}>Preguntas jugadas: {contadorPreguntas}</p>
+          {/* <div className='content-button'>
             <button
-              onClick={girarRuleta}
+              onClick={nuevaPregunta}
               className={`mt-4 px-6 py-3 font-semibold boton ${girando ? 'cursor-not-allowed' : 'hover:opacity-90'}`}
               disabled={girando}
             >
               Nueva pregunta
             </button>
-          </div>
+            <button
+              onClick={girarRuleta}
+              className={`mt-4 ml-4 px-6 py-3 font-semibold boton ${girando ? 'cursor-not-allowed' : 'hover:opacity-90'}`}
+              disabled={girando}
+            >
+              Girar la ruleta
+            </button>
+          </div> */}
         </div>
       )}
-      
     </div>
   );
 };
