@@ -33,32 +33,6 @@ const preguntas: Preguntas = {
     '¿Qué es lo más valiente que hiciste?',
     '¿Cómo es tu diálogo interno?',
     '¿Cuál es tu situación actual?',
-    '¿Qué ves de vos en los demás?',
-    '¿Con qué soñás?',
-    '¿Qué hacés cuando estás muy contento?',
-    '¿Cuál fue el último cambio que hiciste en tu vida?',
-    '¿Cuál fue la mejor decisión que tomaste en la vida?',
-    '¿Qué decisión te cambió la vida?',
-    '¿Quién en tu vida te inspira a ser mejor?',
-    '¿Qué te sorprende de vos mismo últimamente?',
-    '¿Qué actividad te ayuda a encontrar la paz?',
-    '¿Qué tipo de persona sos?',
-    '¿Qué estás esperando obtener?',
-    '¿Qué esperás de los otros?',
-    '¿Qué esperás obtener con lo que hacés?',
-    '¿Qué atributos valorás en una persona?',
-    '¿Qué hacés para sentirte bien?',
-    '¿Qué hacés para que otro se sienta bien?',
-    '¿A quién admirás y por qué?',
-    '¿De qué te hacés cargo?',
-    '¿Qué te atrae?',
-    '¿Qué te gustaría dejar?',
-    '¿Qué te falta?',
-    '¿Qué estás dispuesto a dejar para conseguir tus objetivos/sueños/metas?',
-    '¿A qué recital te hubiese gustado ir?',
-    '¿Cuál fue la mejor pregunta que te hicieron?',
-    '¿Cómo decidís en quién confiar?',
-    '¿Cómo describirías tu relación con la naturaleza?',
   ],
   Galileo: [
     '¿Qué es lo mejor de crecer?',
@@ -86,31 +60,6 @@ const preguntas: Preguntas = {
     'Si pudieras agregar una actividad en tu rutina diaria, ¿qué sería?',
     'No podrías vivir sin...',
     '¿Qué oportunidad te gustaría tener?',
-    '¿Con qué emoción te relacionás más?',
-    '¿Cómo te gusta aprovechar el tiempo?',
-    '¿Cuál es tu cable a tierra?',
-    '¿Cuál es tu canción favorita?',
-    '¿Qué te entretiene?',
-    'Si te digo "aire" ¿en qué pensás?',
-    '¿En qué animal te gustaría reencarnar?',
-    '¿Qué disfrutás hacer en tu estación favorita del año?',
-    '¿Qué te gusta hacer antes de dormir?',
-    '¿Qué te gusta hacer cuando te despertás?',
-    '¿Qué te inspira?',
-    '¿Qué no negociás?',
-    '¿Cuál es tu próxima meta a cumplir?',
-    '¿Qué tipo de gente te cae bien?',
-    '¿Cuál es tu manera favorita de festejar?',
-    '¿Cómo sería un día ideal para vos?',
-    '¿Qué te apasiona en la vida?',
-    '¿En qué momento te sentís vos mism@?',
-    '¿Cómo te describirían tus amigos en 3 palabras?',
-    'Te preparás para una noche perfecta, ¿qué te ponés?',
-    '¿Qué es lo mejor de crecer?',
-    '¿Qué hacen los demás que a vos también te gustaría hacer?',
-    'Si pudieras ser la mejor en algo, ¿en qué sería?',
-    '¿En qué sos bueno/a?',
-    '¿Qué te gusta hacer en tu tiempo libre?',
   ],
   Mesias: [
     '¿Qué es para vos tener éxito en la vida?',
@@ -138,6 +87,8 @@ const preguntas: Preguntas = {
     '¿Qué es el amor?',
     '¿Qué puede aprender el mundo de vos?',
     '¿En qué momentos te sentís libre?',
+  ],
+  Luna: [
     '¿Te gusta la persona que sos? ¿Por qué?',
     '¿De qué manera expresás amor?',
     '¿Dónde vivís más: en el pasado, en el presente o en el futuro?',
@@ -163,15 +114,71 @@ const preguntas: Preguntas = {
     '¿Qué cambio te gustaría presenciar?',
     '¿Qué hecho te gustaría presenciar?',
     '¿Qué es lo que más te importa en este momento?',
+  ],
+  Sol: [
+    '¿Qué ves de vos en los demás?',
+    '¿Con qué soñás?',
+    '¿Qué hacés cuando estás muy contento?',
+    '¿Cuál fue el último cambio que hiciste en tu vida?',
+    '¿Cuál fue la mejor decisión que tomaste en la vida?',
+    '¿Qué decisión te cambió la vida?',
+    '¿Quién en tu vida te inspira a ser mejor?',
+    '¿Qué te sorprende de vos mismo últimamente?',
+    '¿Qué actividad te ayuda a encontrar la paz?',
+    '¿Qué tipo de persona sos?',
+    '¿Qué estás esperando obtener?',
+    '¿Qué esperás de los otros?',
+    '¿Qué esperás obtener con lo que hacés?',
+    '¿Qué atributos valorás en una persona?',
+    '¿Qué hacés para sentirte bien?',
+    '¿Qué hacés para que otro se sienta bien?',
+    '¿A quién admirás y por qué?',
+    '¿De qué te hacés cargo?',
+    '¿Qué te atrae?',
+    '¿Qué te gustaría dejar?',
+    '¿Qué te falta?',
+    '¿Qué estás dispuesto a dejar para conseguir tus objetivos/sueños/metas?',
+    '¿A qué recital te hubiese gustado ir?',
+    '¿Cuál fue la mejor pregunta que te hicieron?',
+    '¿Cómo decidís en quién confiar?',
+  ],
+  Estrella: [
+    '¿Con qué emoción te relacionás más?',
+    '¿Cómo te gusta aprovechar el tiempo?',
+    '¿Cuál es tu cable a tierra?',
+    '¿Cuál es tu canción favorita?',
+    '¿Qué te entretiene?',
+    'Si te digo "aire" ¿en qué pensás?',
+    '¿En qué animal te gustaría reencarnar?',
+    '¿Qué disfrutás hacer en tu estación favorita del año?',
+    '¿Qué te gusta hacer antes de dormir?',
+    '¿Qué te gusta hacer cuando te despertás?',
+    '¿Qué te inspira?',
+    '¿Qué no negociás?',
+    '¿Cuál es tu próxima meta a cumplir?',
+    '¿Qué tipo de gente te cae bien?',
+    '¿Cuál es tu manera favorita de festejar?',
+    '¿Cómo sería un día ideal para vos?',
+    '¿Qué te apasiona en la vida?',
+    '¿En qué momento te sentís vos mism@?',
+    '¿Cómo te describirían tus amigos en 3 palabras?',
+    'Te preparás para una noche perfecta, ¿qué te ponés?',
     '¿Qué es lo que más valoras en una amistad?',
+    '¿Cómo describirías tu relación con la naturaleza?',
+    '¿Qué disfrutás hacer en tu estación favorita del año?',
+    '¿Qué te gusta hacer antes de dormir?',
+    '¿Qué te gusta hacer cuando te despertás?',
   ],
 };
 
 // Mapa de colores por categoría
 const coloresCategoria: { [key: string]: string } = {
-  Nova: '#d9c0c9',
-  Galileo: '#f3caad',
-  Mesias: '#cbe3df',
+  Nova: '#d9c0c9',     // Rosa claro
+  Galileo: '#f3caad',  // Naranja claro
+  Mesias: '#cbe3df',   // Verde agua claro
+  Luna: '#e3d5f1',     // Lila claro
+  Sol: '#f9e8b3',      // Amarillo pálido
+  Estrella: '#c6e2f5', // Azul suave
 };
 
 const App: React.FC = () => {
@@ -185,6 +192,9 @@ const App: React.FC = () => {
     Nova: [],
     Galileo: [],
     Mesias: [],
+    Luna: [],
+    Sol: [],
+    Estrella: [],
   });
 
   useEffect(() => {
@@ -220,12 +230,18 @@ const App: React.FC = () => {
     setTimeout(() => {
       const anguloFinal = (gradosExtra + 315) % 360;
       let categoria: string;
-      if (anguloFinal < 120) {
+      if (anguloFinal < 60) {
         categoria = 'Nova';
-      } else if (anguloFinal < 240) {
+      } else if (anguloFinal < 120) {
         categoria = 'Galileo';
-      } else {
+      } else if (anguloFinal < 180) {
         categoria = 'Mesias';
+      } else if (anguloFinal < 240) {
+        categoria = 'Luna';
+      } else if (anguloFinal < 300) {
+        categoria = 'Sol';
+      } else {
+        categoria = 'Estrella';
       }
       setCategoriaSeleccionada(categoria);
 
@@ -323,14 +339,14 @@ const App: React.FC = () => {
 
       {!mostrarCarta && (
         <div className='content-button mt-8'>
-          <br />
+          {/* <br />
           <button
             onClick={girarRuleta}
             className={`px-6 py-3 font-semibold boton ${girando ? 'cursor-not-allowed' : 'hover:opacity-90'}`}
             disabled={girando}
           >
             Girar la ruleta
-          </button>
+          </button> */}
         </div>
       )}
 
@@ -342,7 +358,8 @@ const App: React.FC = () => {
                 <div className="w-full h-full bg-opacity-80 rounded-[30px]" style={{ backgroundColor: cartaColor }} />
               </div>
               <div className="absolute w-full h-full backface-hidden carta flex flex-col p-4 transform rotate-y-180 text-center" style={{ backgroundColor: cartaColor }}>
-                <h3 className="text-lg flex-1 flex items-center justify-center font-bold"><strong>{preguntaActual}</strong></h3>
+              {/* <p className="text-sm font-semibold categ">{categoriaSeleccionada}</p> */}
+               <h3 className="text-lg flex-1 flex items-center justify-center font-bold"><strong>{preguntaActual}</strong></h3>
               </div>
             </div>
           </div>
@@ -363,3 +380,4 @@ const App: React.FC = () => {
 };
 
 export default App;
+
