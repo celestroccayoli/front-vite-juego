@@ -154,7 +154,7 @@ const preguntas: Preguntas = {
     '¿Cómo te gusta ser recompensada?',
     '¿Qué significa para vos la responsabilidad?',
     '¿Cómo te gustaría ser recordado/a?',
-    '¿Qué es para vos una relación?',
+    '¿Qué es para vos una buena relación?',
   ],
 };
 
