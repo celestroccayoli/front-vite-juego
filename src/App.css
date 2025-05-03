@@ -124,8 +124,8 @@ h2, h3, p {
   background-color: #f3caad; /* Naranja claro */
   border-radius: 30px; /* Esquinas redondeadas */
   padding: 30px;
-  margin: 4%;
-  width: 300px;
+  margin: 4% auto;
+  width: 280px;
 }
 
 /* Estilo para el texto dentro de la carta */
