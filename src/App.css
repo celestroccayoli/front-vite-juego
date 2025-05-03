@@ -129,6 +129,10 @@ h2, h3, p {
 }
 
 /* Estilo para el texto dentro de la carta */
+p.categ {
+  margin: 0;
+}
+
 .carta p {
   color: #681c7c; /* Morado oscuro para el texto */
 }

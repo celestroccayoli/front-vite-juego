@@ -338,7 +338,7 @@ const App: React.FC = () => {
             </div>
           </div>
           <p className="mb-4 text-center xs" style={{ color: "grey", fontSize: "xs" }}>Preguntas jugadas: {contadorPreguntas}</p>
-          <div className='content-button'>
+          {/* <div className='content-button'>
             <button
               onClick={nuevaPregunta}
               className={`mt-4 px-6 py-3 font-semibold boton ${girando ? 'cursor-not-allowed' : 'hover:opacity-90'}`}
@@ -346,7 +346,7 @@ const App: React.FC = () => {
             >
               Nueva pregunta
             </button>
-          </div>
+          </div> */}
         </div>
       )}
     </div>
