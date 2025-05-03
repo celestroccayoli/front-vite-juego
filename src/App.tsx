@@ -16,16 +16,16 @@ const preguntas: Preguntas = {
     '¿Cómo reaccionás cuando alguien te felicita?',
     '¿Qué pensás cuando te mirás al espejo?',
     '¿Cómo te sentís cuando pedís ayuda?',
-    '¿Preferís el tiempo a solas o en compañía?',
-    '¿Qué hacés cuando estás sola?',
+    '¿Preferís el tiempo a solas o en compañía?¿Por qué?',
+    '¿Qué te gusta hacer cuando estás solo/a?',
     '¿Qué es lo más valiente que hiciste?',
     '¿Cómo es tu diálogo interno?',
     '¿Qué ves de vos en los demás?',
     '¿Qué hacés cuando estás muy contento?',
-    '¿Qué actividad te ayuda a encontrar la paz?',
+    '¿Qué actividad te da paz?',
     '¿Qué tipo de persona sos?',
-    '¿Te gusta la persona que sos? ¿Por qué?',
-    '¿En qué momento te sentís vos mism@?',
+    'Si fueras el personaje de una serie ¿Cuál serías y por qué?',
+    '¿En qué momento te sentís vos mismo/a?',
     '¿Cómo te describirían tus amigos en 3 palabras?',
     'Nombra tres cualidades que te gustan de vos.',
     '¿Qué define tu identidad?',
@@ -33,18 +33,18 @@ const preguntas: Preguntas = {
     '¿Con qué emoción te relacionás más?',
     '¿Qué no negociás?',
     '¿Qué te atrae?',
+    '¿Qué te dice tu voz interior?',
   ],
   Reflexión: [
-    '¿Qué hacés de manera forzada?',
+    '¿Qué querés volver a hacer?',
     '¿Qué necesitás aprender?',
     '¿Cómo te gustaría que actúen los demás cuando estás enojada/o?',
     '¿Cuánto peso le das a lo que la gente piensa de vos?',
     '¿A qué deberías prestarle más atención?',
     '¿En qué área de tu vida estás poniendo más energía?',
-    '¿Cuál es tu situación actual?',
-    '¿Qué es lo mejor de crecer?',
+    '¿Cuál definirías tu situación actual?',
+    '¿Qué es lo peor y mejor de crecer?',
     '¿Qué pensás que tiene de bueno ser adulto/a?',
-    'Si tu vida fuera una película, ¿qué tipo de personaje serías?',
     'Si tu vida fuera una película, ¿de qué género sería?',
     'No podrías vivir sin...',
     '¿Qué es el amor?',
@@ -58,8 +58,8 @@ const preguntas: Preguntas = {
     '¿Qué significa para vos la palabra "religión"?',
     '¿Qué define "hogar" para vos?',
     'Si te digo "aire" ¿en qué pensás?',
-    '¿En qué animal te gustaría reencarnar?',
-    '¿Cómo describirías tu relación con la naturaleza?',
+    '¿Qué animal te gustaría ser?',
+    '¿Cómo es tu relación con la naturaleza?',
   ],
   Deseos: [
     '¿Qué querés hacer pero lo estás postergando?',
@@ -70,23 +70,22 @@ const preguntas: Preguntas = {
     '¿A qué te gustaría dedicarle más tiempo?',
     '¿En qué te gustaría asumir más responsabilidad?',
     '¿A qué te gustaría dedicarte?',
-    '¿Cuál es tu aspiración más importante?',
+    '¿Cuál es tu aspiración más grande?',
     '¿Qué quisieras hacer pero te da miedo intentar?',
     '¿Qué te hace sentir seguridad?',
     '¿Qué es lo que realmente te interesa?',
     '¿Qué estás esperando obtener?',
-    '¿Qué esperás obtener con lo que hacés?',
     '¿Qué te gustaría dejar?',
     '¿Qué te falta?',
-    '¿Qué estás dispuesto a dejar para conseguir tus objetivos/sueños/metas?',
+    '¿Qué te sobra?',
+    '¿Qué estás dispuesto a hacer para conseguir tus objetivos/sueños/metas?',
     '¿A qué recital te hubiese gustado ir?',
     '¿Qué viaje te gustaría hacer?',
     '¿Qué oportunidad te gustaría tener?',
-    '¿Qué anhela tu corazón?',
+    '¿Qué anhelas?',
     '¿Qué estilo de vida te gustaría tener?',
-    '¿Qué cambio te gustaría presenciar?',
     '¿Qué hecho te gustaría presenciar?',
-    '¿Qué apasiona en la vida?',
+    '¿Qué apasiona?',
   ],
   Presente: [
     '¿Cómo te sentís hoy?',
@@ -94,7 +93,7 @@ const preguntas: Preguntas = {
     '¿Con quién no estuviste de acuerdo recientemente?',
     '¿Qué te hizo feliz hoy?',
     '¿Qué te gustaría sentir hoy?',
-    '¿Qué te enorgullece hoy?',
+    '¿De qué estás orgulloso/a?',
     '¿Qué te haría sentir contento/a hoy?',
     '¿Cuál es tu objetivo para hoy?',
     '¿Qué actividades aumentan tu energía?',
@@ -103,8 +102,8 @@ const preguntas: Preguntas = {
     '¿Qué te inspira?',
     '¿Qué disfrutás hacer en tu estación favorita del año?',
     '¿Qué te gusta hacer antes de dormir?',
-    '¿Qué te gusta hacer cuando te despertás?',
-    '¿Cuál es tu prioridad en este momento de tu vida?',
+    '¿Qué haces apenas te despertás?',
+    '¿Cuál es tu prioridad en este momento?',
     '¿Qué estás haciendo hoy para ser la persona que querés ser?',
     '¿En qué momentos te sentís libre?',
     '¿Qué es lo que más te importa en este momento?',
@@ -116,36 +115,32 @@ const preguntas: Preguntas = {
     'Te preparás para una noche perfecta, ¿qué te ponés?',
   ],
   Futuro: [
-    '¿Cuál fue el último cambio que hiciste en tu vida?',
-    '¿Cuál fue la mejor decisión que tomaste en la vida?',
+    '¿Cuál fue el último cambio que hiciste?',
+    '¿Cuál fue la mejor decisión que tomaste?',
     '¿Qué decisión te cambió la vida?',
     '¿Cómo te imaginás tu vida en 5 años?',
     '¿Qué querés que te pase este año?',
-    '¿Cuál es el logro que más te enorgullece?',
     '¿Cómo te gustaría vivir hoy si fuera tu último día?',
     '¿Qué le diría tu yo del presente a tu yo del futuro?',
-    '¿Qué quieres cambiar de tu vida? ¿Por qué?',
-    '¿Qué aspect de tu vida querés conservar en el futuro?',
-    '¿Cuál es la última lección que aprendiste?',
+    '¿Qué aspectos de tu vida querés conservar en el futuro?',
+    '¿Cuál fue la última lección que aprendiste?',
     '¿Cómo ves el futuro?',
     '¿Qué te gustaría volver to intentar?',
     '¿Cuál es el mejor consejo que te dieron?',
     '¿Qué crees que tiene la vida para vos?',
-    '¿Cuál es tu objetivo para esta semana?',
+    '¿Cuál es tu objetivo para este año?',
     '¿Cuál es tu próxima meta a cumplir?',
     '¿Qué esperás de los otros?',
     'Si pudieras agregar una actividad en tu rutina diaria, ¿qué sería?',
     '¿Cómo sería tu día perfecto?',
     '¿Cómo te gusta comenzar el día?',
-    '¿Cómo sería un día ideal para vos?',
     '¿Qué hacen los demás que a vos también te gustaría hacer?',
     'Si pudieras ser la mejor en algo, ¿en qué sería?',
     '¿Cuál es tu manera favorita de festejar?',
   ],
   Relaciones: [
-    '¿Qué pensás que dicen tus amistades de vos?',
     '¿A quién necesitás pedirle perdón?',
-    '¿Quién en tu vida te inspira a ser mejor?',
+    '¿Quién o qué te inspira a ser mejor?',
     '¿A quién admirás y por qué?',
     '¿De qué te hacés cargo?',
     '¿Cuál fue la mejor pregunta que te hicieron?',
@@ -153,17 +148,13 @@ const preguntas: Preguntas = {
     '¿Qué atributos valorás en una persona?',
     '¿De qué manera expresás amor?',
     '¿Cuál es la característica que considerás más importante en una persona?',
-    '¿Qué es lo más importante para vos en este momento?',
     '¿Qué tipo de gente te cae bien?',
     '¿Qué es lo que más valoras en una amistad?',
     '¿Quién es tu héroe?',
-    'Si pudieras ser un animal, ¿cuál serías y por qué?',
-    '¿Cuál fue tu último logro?',
     '¿Cómo te gusta ser recompensada?',
-    '¿Qué necesitás?',
-    '¿Qué te dice tu voz interior?',
     '¿Qué significa para vos la responsabilidad?',
     '¿Cómo te gustaría ser recordado/a?',
+    '¿Qué es para vos una relación?',
   ],
 };
 
@@ -224,21 +215,9 @@ const App: React.FC = () => {
     }
 
     setTimeout(() => {
-      const anguloFinal = gradosExtra % 360; // Simplificamos el cálculo, eliminando el offset
-      let categoria: string;
-      if (anguloFinal < 60) {
-        categoria = 'Autoconocimiento';
-      } else if (anguloFinal < 120) {
-        categoria = 'Reflexión';
-      } else if (anguloFinal < 180) {
-        categoria = 'Deseos';
-      } else if (anguloFinal < 240) {
-        categoria = 'Presente';
-      } else if (anguloFinal < 300) {
-        categoria = 'Futuro';
-      } else {
-        categoria = 'Relaciones';
-      }
+      // Seleccionar categoría aleatoria
+      const categorias = Object.keys(preguntas);
+      const categoria = categorias[Math.floor(Math.random() * categorias.length)];
       setCategoriaSeleccionada(categoria);
 
       const indicesDisponibles = preguntas[categoria]
@@ -280,7 +259,7 @@ const App: React.FC = () => {
   };
 
   const nuevaPregunta = () => {
-    if (!categoriaSeleccionada || girando) return;
+    if (girando) return;
     setGirando(true);
     setMostrarCarta(false);
 
@@ -294,20 +273,25 @@ const App: React.FC = () => {
     }
 
     setTimeout(() => {
-      const indicesDisponibles = preguntas[categoriaSeleccionada]
+      // Seleccionar una nueva categoría aleatoria
+      const categorias = Object.keys(preguntas);
+      const categoria = categorias[Math.floor(Math.random() * categorias.length)];
+      setCategoriaSeleccionada(categoria);
+
+      const indicesDisponibles = preguntas[categoria]
         .map((_: string, index: number) => index)
-        .filter((index) => !preguntasUsadas[categoriaSeleccionada].includes(index));
+        .filter((index) => !preguntasUsadas[categoria].includes(index));
 
       if (indicesDisponibles.length === 0) {
-        setPreguntasUsadas((prev) => ({ ...prev, [categoriaSeleccionada]: [] }));
-        seleccionarPregunta(categoriaSeleccionada, []);
+        setPreguntasUsadas((prev) => ({ ...prev, [categoria]: [] }));
+        seleccionarPregunta(categoria, []);
       } else {
         const indiceAleatorio = indicesDisponibles[Math.floor(Math.random() * indicesDisponibles.length)];
         setPreguntasUsadas((prev) => ({
           ...prev,
-          [categoriaSeleccionada]: [...prev[categoriaSeleccionada], indiceAleatorio],
+          [categoria]: [...prev[categoria], indiceAleatorio],
         }));
-        setPreguntaActual(preguntas[categoriaSeleccionada][indiceAleatorio]);
+        setPreguntaActual(preguntas[categoria][indiceAleatorio]);
         setContadorPreguntas((prev) => prev + 1);
         setCartaKey((prev) => prev + 1);
         setMostrarCarta(true);
@@ -337,13 +321,6 @@ const App: React.FC = () => {
         <div className='content-button mt-8'>
           <br />
           <br />
-           {/* <button
-            onClick={girarRuleta}
-            className={`px-6 py-3 font-semibold boton ${girando ? 'cursor-not-allowed' : 'hover:opacity-90'}`}
-            disabled={girando}
-          >
-            Gira la ruleta
-          </button> */}
         </div>
       )}
 
@@ -355,7 +332,7 @@ const App: React.FC = () => {
                 <div className="w-full h-full bg-opacity-80 rounded-[30px]" style={{ backgroundColor: cartaColor }} />
               </div>
               <div className="absolute w-full h-full backface-hidden carta flex flex-col p-4 transform rotate-y-180 text-center" style={{ backgroundColor: cartaColor }}>
-              <p className="text-sm font-semibold categ">{categoriaSeleccionada}</p>
+                <p className="text-sm font-semibold categ">{categoriaSeleccionada}</p>
                 <h3 className="text-lg flex-1 flex items-center justify-center font-bold"><strong>{preguntaActual}</strong></h3>
               </div>
             </div>
