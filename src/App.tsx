@@ -46,7 +46,6 @@ const preguntas: Preguntas = {
     '¿Qué es lo peor y mejor de crecer?',
     '¿Qué pensás que tiene de bueno ser adulto/a?',
     'Si tu vida fuera una película, ¿de qué género sería?',
-    'No podrías vivir sin...',
     '¿Qué es el amor?',
     '¿Qué puede aprender el mundo de vos?',
     '¿Dónde vivís más: en el pasado, en el presente o en el futuro?',
@@ -60,6 +59,9 @@ const preguntas: Preguntas = {
     'Si te digo "aire" ¿en qué pensás?',
     '¿Qué animal te gustaría ser?',
     '¿Cómo es tu relación con la naturaleza?',
+    '¿Cuál fue el último cambio que hiciste?',
+    '¿Cuál fue la mejor decisión que tomaste?',
+    '¿Qué decisión te cambió la vida?',
   ],
   Deseos: [
     '¿Qué querés hacer pero lo estás postergando?',
@@ -115,9 +117,7 @@ const preguntas: Preguntas = {
     'Te preparás para una noche perfecta, ¿qué te ponés?',
   ],
   Futuro: [
-    '¿Cuál fue el último cambio que hiciste?',
-    '¿Cuál fue la mejor decisión que tomaste?',
-    '¿Qué decisión te cambió la vida?',
+    'No podrías vivir sin...',
     '¿Cómo te imaginás tu vida en 5 años?',
     '¿Qué querés que te pase este año?',
     '¿Cómo te gustaría vivir hoy si fuera tu último día?',
