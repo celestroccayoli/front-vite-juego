@@ -305,6 +305,7 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center">
       <h2 className="text-4xl font-bold mb-4 text-center">Interconectados</h2>
+      <p className='subtitle'>El juego</p>
       <div className="ruleta-container mb-8">
         <div
           id="ruleta"
@@ -312,8 +313,12 @@ const App: React.FC = () => {
           onClick={mostrarCarta ? nuevaPregunta : girarRuleta}
           style={{ cursor: girando ? 'not-allowed' : 'pointer' }}
         />
-        <div className="centro-ruleta">
-          {girando ? 'Girando' : 'Listo'}
+        <div
+          className="centro-ruleta"
+          onClick={mostrarCarta ? nuevaPregunta : girarRuleta}
+          style={{ cursor: girando ? 'not-allowed' : 'pointer' }}
+        >
+          <img src="/logo-interconectados.png" alt="Logo Interconectados" className="w-full h-full object-contain" />
         </div>
       </div>
 
