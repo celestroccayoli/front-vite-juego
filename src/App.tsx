@@ -318,7 +318,7 @@ const App: React.FC = () => {
           onClick={mostrarCarta ? nuevaPregunta : girarRuleta}
           style={{ cursor: girando ? 'not-allowed' : 'pointer' }}
         >
-          <img src="/logo-interconectados.png" alt="Logo Interconectados" className="w-full h-full object-contain" />
+          <img src="/logo-interconectados.ico" alt="Logo Interconectados" className="w-full h-full object-contain" />
         </div>
       </div>
 

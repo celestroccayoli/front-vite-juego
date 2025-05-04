@@ -76,7 +76,7 @@
 /* Imagen del logo en el centro de la ruleta */
 img.w-full.h-full.object-contain {
   width: 44px;
-  background: white;
+  background: #dde2e7;
   margin-top: 2px;
 }
 
