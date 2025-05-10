@@ -5,19 +5,63 @@ const Home: React.FC = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="flex flex-col justify-center items-center min-h-screen bg-[#E6BBAF] p-6">
-      <h1 className="text-white text-1xl font-bold mb-16 tracking-wide">Interconectados<span className="inline-block w-24 border-b-4 border-white ml-2"></span><span className="text-white text-5xl ml-2">.</span></h1>
-
-      <button
-        className="bg-white text-[#333] font-semibold py-4 px-10 rounded-2xl text-xl shadow-md mb-10 hover:scale-105 transition-transform"
-        onClick={() => navigate('/categorias')}
-      >
-        Jugar
-      </button>
-
-      <div className="flex flex-col gap-4 text-white font-medium text-lg">
-        <button onClick={() => navigate('/como-jugar')} className="hover:underline">¿Cómo se juega?</button>
-        <button onClick={() => navigate('/acerca')} className="hover:underline">Acerca de Interconectados</button>
+    <div className="min-h-screen flex flex-col items-center justify-center" style={{ backgroundColor: '#d5d5ed' }}>
+      <h2 className="text-4xl font-bold mb-4 text-center" style={{ color: '#681c7c' }}>
+        Interconectados
+      </h2>
+      <p className="subtitle" style={{ color: '#a68fb0', marginBottom: '10%' }}>
+        El juego
+      </p>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', alignItems: 'center' }}>
+        <button
+          onClick={() => navigate('/game')}
+          className="boton hover:opacity-90"
+          style={{ 
+            backgroundColor: '#681c7c', 
+            color: '#d5d5ed', 
+            borderRadius: '30px', 
+            padding: '12px 24px', 
+            fontWeight: 600, 
+            fontSize: '1em', 
+            border: 'none', 
+            cursor: 'pointer',
+              width: "280px"  
+          }}
+        >
+          Jugar
+        </button>
+        <button
+          onClick={() => navigate('/como-se-juega')}
+          className="hover:opacity-90"
+          style={{ 
+            backgroundColor: '#a68fb0', 
+            color: 'white', 
+            borderRadius: '30px', 
+            padding: '12px 24px', 
+            fontWeight: 600, 
+            fontSize: '1em', 
+            border: 'none', 
+            cursor: 'pointer',
+            width: "280px" 
+          }}
+        >
+          ¿Cómo se juega?
+        </button>
+        {/* <button
+          className="hover:opacity-90"
+          style={{ 
+            backgroundColor: '#a68fb0', 
+            color: 'white', 
+            borderRadius: '30px', 
+            padding: '12px 24px', 
+            fontWeight: 600, 
+            fontSize: '1em', 
+            border: 'none', 
+            cursor: 'pointer' 
+          }}
+        >
+          Botón 3 (Placeholder)
+        </button> */}
       </div>
     </div>
   );

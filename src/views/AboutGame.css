@@ -1,0 +1,82 @@
+.logo {
+    position: absolute;
+    top: 20px;
+}
+
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .carousel-slide {
+    background-color: #f3caad; /* Naranja claro, consistente con el proyecto */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 30px; /* Esquinas redondeadas como las cartas */
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .carousel-slide h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #681c7c; /* Morado oscuro */
+    font-weight: bold;
+  }
+  
+  .carousel-slide p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: #681c7c;
+  }
+  
+  .carousel-slide ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+  }
+  
+  .carousel-slide li {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #681c7c;
+  }
+  
+  .carousel-slide .cta-button {
+    background-color: #681c7c;
+    color: #d5d5ed;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  .carousel-slide .cta-button:hover {
+    opacity: 0.9;
+  }
+  
+  .carousel-controls {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .carousel-controls button {
+    padding: 10px 20px;
+    color: #681c7c;
+    border: solid 1px #681c7c;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+  }
+  
+  .carousel-controls button:hover {
+    background-color: #e3d5f1; /* Lila claro al hacer hover */
+  }

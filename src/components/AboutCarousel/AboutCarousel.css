@@ -1,0 +1,165 @@
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .carousel-wrapper {
+    width: 100%;
+    overflow: visible; /* Cambiar a visible para que el contenido no se corte */
+    position: relative; /* Necesario para la animación de deslizamiento */
+  }
+  
+  .carousel-slide {
+    width: 90vw;
+    max-width: 400px;
+    min-width: 320px;
+    height: auto; /* Permitir que la altura se ajuste al contenido */
+    margin: 0 auto;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    transition: transform 0.5s ease-in-out;
+    box-sizing: border-box;
+  }
+  
+  .carousel-slide.slide-right {
+    animation: slideRight 0.5s ease-in-out forwards;
+  }
+  
+  .carousel-slide.slide-left {
+    animation: slideLeft 0.5s ease-in-out forwards;
+  }
+  
+  @keyframes slideRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .carousel-slide h2 {
+    font-size: 1.5em;
+    margin-bottom: 8px;
+    color: #681c7c;
+    font-weight: bold;
+  }
+  
+  .carousel-slide p {
+    font-size: 1em;
+    margin-bottom: 12px;
+    color: #681c7c;
+  }
+  
+  .carousel-slide ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+    margin-bottom: 12px; /* Añadir margen para espaciar la lista del botón */
+  }
+  
+  .carousel-slide li {
+    margin-bottom: 8px;
+    font-size: 0.9em;
+    color: #681c7c;
+  }
+  
+  .carousel-slide .cta-button {
+    background-color: #681c7c;
+    color: #d5d5ed;
+    border-radius: 30px;
+    padding: 8px 16px;
+    font-weight: 600;
+    font-size: 0.9em;
+    border: none;
+    cursor: pointer;
+    margin-top: 12px;
+    display: block; /* Asegurar que el botón se comporte bien en el flujo */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .carousel-slide .cta-button:hover {
+    opacity: 0.9;
+  }
+  
+  .carousel-controls {
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+    max-width: 400px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin-top: 10px; /* Añadir margen para separar los botones del contenido */
+  }
+  
+  .carousel-controls button {
+    padding: 8px 16px;
+    color: #681c7c;
+    border: solid 1px #681c7c;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    font-size: 0.9em;
+  }
+  
+  .carousel-controls button:hover {
+    background-color: #e3d5f1;
+  }
+  
+  /* Media query para pantallas muy pequeñas */
+  @media (max-width: 360px) {
+    .carousel-slide {
+      width: 95vw;
+      min-width: 300px;
+      padding: 10px;
+    }
+  
+    .carousel-slide h2 {
+      font-size: 1.3em;
+    }
+  
+    .carousel-slide p {
+      font-size: 0.9em;
+    }
+  
+    .carousel-slide li {
+      font-size: 0.85em;
+    }
+  
+    .carousel-slide .cta-button {
+      padding: 6px 12px;
+      font-size: 0.85em;
+    }
+  
+    .carousel-controls {
+      width: 95vw;
+      max-width: 300px;
+    }
+  
+    .carousel-controls button {
+      padding: 6px 12px;
+      font-size: 0.85em;
+    }
+  }
