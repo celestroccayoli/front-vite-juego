@@ -6,10 +6,10 @@ const Home: React.FC = () => {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center" style={{ backgroundColor: '#d5d5ed' }}>
-         <header className="header">
+      <header className="header">
         <div className="logo">
           <a href="/">
-            <img src="/logo-interconectados.ico" alt="logo interconectados" style={{width: "50px"}}/>
+            <img src="/logo-interconectados.ico" alt="logo interconectados" style={{ width: "50px" }} />
           </a>
         </div>
       </header>
@@ -32,13 +32,13 @@ const Home: React.FC = () => {
             fontSize: '1em', 
             border: 'none', 
             cursor: 'pointer',
-              width: "280px"  
+            width: "280px"  
           }}
         >
           Jugar
         </button>
         <button
-          onClick={() => navigate('/como-se-juega')}
+          onClick={() => navigate('/acerca-del-juego')}
           className="hover:opacity-90"
           style={{ 
             backgroundColor: '#a68fb0', 
@@ -54,21 +54,23 @@ const Home: React.FC = () => {
         >
           Acerca del juego
         </button>
-        {/* <button
+        <button
+          onClick={() => navigate('/sobre-interconectados')}
           className="hover:opacity-90"
           style={{ 
-            backgroundColor: '#a68fb0', 
-            color: 'white', 
+            backgroundColor: "#d5d5ed",
+            color: "#a68fb0",
             borderRadius: '30px', 
             padding: '12px 24px', 
             fontWeight: 600, 
             fontSize: '1em', 
-            border: 'none', 
-            cursor: 'pointer' 
+            border: "none",
+            cursor: 'pointer',
+            width: "280px" 
           }}
         >
-          Botón 3 (Placeholder)
-        </button> */}
+          Sobre Interconectados
+        </button>
       </div>
     </div>
   );

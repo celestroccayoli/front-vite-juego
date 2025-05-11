@@ -4,6 +4,7 @@ import './App.css';
 import Game from './views/Game.tsx';
 import Home from './views/Home.tsx';
 import AboutGame from './views/AboutGame.tsx';
+import AboutUs from './views/AboutUs.tsx';
 
 const App: React.FC = () => {
   return (
@@ -11,7 +12,8 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/game" element={<Game />} />
-        <Route path="/como-se-juega" element={<AboutGame />} />
+        <Route path="/acerca-del-juego" element={<AboutGame />} />
+        <Route path="/sobre-interconectados" element={<AboutUs />} />
       </Routes>
     </Router>
   );

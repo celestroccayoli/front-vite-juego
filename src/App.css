@@ -166,3 +166,16 @@ p.categ {
 .boton:disabled {
   background-color: #a68fb0; /* Versión más clara del morado para el estado deshabilitado */
 }
+/* Añadir esta clase al final de App.css para garantizar especificidad */
+.about-us-text {
+  color: #333 !important;
+  text-align: left;
+}
+
+/* Si hay un selector más específico causando el conflicto, como ".min-h-screen p", puedes aumentar la especificidad así: */
+.min-h-screen .about-us-text,
+.min-h-screen .about-us-text p {
+  color: #333 !important;
+  text-align: left;
+
+}
