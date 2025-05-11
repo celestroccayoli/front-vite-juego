@@ -24,17 +24,17 @@ const slides = [
     bullets: [
       "Reúne a los participantes en círculo.",
       "Asegúrate de que todos vean las preguntas.",
-"Prepárese para contestar, giren la ruleta, ¡y listo!."
+"Prepárese para contestar, giren la ruleta, ¡y que comience!."
     ]
   },
   {
     title: "Modo de Juego",
     description: "Elegí cómo jugar según el momento:",
     bullets: [
-      "Me toca: Responde el que giró la ruleta",
+      "Me toca: Responde el que giró la ruleta.",
       "Te toca: El que giró la ruleta elige a quién reponde.",
       "Modo Libre: Responde cualquiera.",
-      "Modo Ronda: Todos responden la misma pregunta."
+      "Modo Ronda: Responden todos."
     ]
   },
   {
