@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom'; // Importa Link si usas react-router-dom
 import '../App.css';
 
 // Definimos las preguntas por categoría con firma de índice
@@ -344,6 +345,13 @@ const Game: React.FC = () => {
           <p className="mb-4 text-center xs" style={{ color: "grey", fontSize: "xs" }}>Preguntas jugadas: {contadorPreguntas}</p>
         </div>
       )}
+      <Link
+        to="/"
+        className="text-xs text-gray-500 hover:text-gray-700 mt-4 text-center"
+        style={{ fontSize: '0.8rem', textDecoration: 'none', textAlign: "center", display: "block" }}
+      >
+        Volver al inicio
+      </Link>
     </div>
   );
 };

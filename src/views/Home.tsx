@@ -6,6 +6,13 @@ const Home: React.FC = () => {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center" style={{ backgroundColor: '#d5d5ed' }}>
+         <header className="header">
+        <div className="logo">
+          <a href="/">
+            <img src="/logo-interconectados.ico" alt="logo interconectados" style={{width: "50px"}}/>
+          </a>
+        </div>
+      </header>
       <h2 className="text-4xl font-bold mb-4 text-center" style={{ color: '#681c7c' }}>
         Interconectados
       </h2>
