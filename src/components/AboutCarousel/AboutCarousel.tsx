@@ -19,12 +19,6 @@ const slides = [
     ]
   },
   {
-    title: "Intención",
-    description: "",
-    bullets: [
-    ]
-  },
-  {
     title: "Preparación",
     description: "Encontrá un espacio cómodo. Si jugás solo buscá un lugar tranquilo para reflexionar.",
     bullets: [
