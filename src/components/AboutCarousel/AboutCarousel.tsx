@@ -20,10 +20,11 @@ const slides = [
   },
   {
     title: "Preparación",
-    description: "Encontrá un espacio cómodo. Si jugás solo buscá un lugar tranquilo para reflexionar.",
+    description: "Encontrá un espacio cómodo. Si jugás solo, buscá un lugar tranquilo para reflexionar.",
     bullets: [
       "Reúne a los participantes en círculo.",
-      "Asegúrate de que todos vean las preguntas."
+      "Asegúrate de que todos vean las preguntas.",
+"Prepárese para contestar, giren la ruleta, ¡y listo!."
     ]
   },
   {
