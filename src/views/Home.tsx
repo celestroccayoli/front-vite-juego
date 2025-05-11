@@ -45,7 +45,7 @@ const Home: React.FC = () => {
             width: "280px" 
           }}
         >
-          ¿Cómo se juega?
+          Acerca del juego
         </button>
         {/* <button
           className="hover:opacity-90"

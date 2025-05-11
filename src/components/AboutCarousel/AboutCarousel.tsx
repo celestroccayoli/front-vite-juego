@@ -4,39 +4,43 @@ import './AboutCarousel.css';
 
 const slides = [
   {
-    title: "Interconectados: El juego",
-    description: "Un juego para conectar con otros y contigo mismo. Gira la ruleta, responde preguntas y crea conversaciones profundas que transforman.",
+    title: "El para qué",
+    description: "El objetivo del juego es ser un catalizador para crear conversaciones significativas que profundicen las conexiones humanas. Más allá del simple entretenimiento, la intención es abrir espacios de diálogo, tanto internos como con los demás, donde cada participante pueda descubrir nuevas perspectivas, fortalecer lazos y promover un crecimiento personal y colectivo.",
     bullets: [
-      "Fomenta empatía y comprensión.",
-      "Ideal para jugar en grupo o en solitario.",
-      "Abre espacios de diálogo y crecimiento."
+      // "Fomenta empatía y comprensión.",
+      // "Ideal para jugar en grupo o en solitario.",
+      // "Abre espacios de diálogo y crecimiento."
+    ]
+  },
+  {
+    title: "El cómo",
+    description: "A través de preguntas para explorar emociones, experiencias y valores, el juego fomenta la empatía, la comprensión y el aprendizaje entre los jugadores. También se puede jugar en solitario, permitiendo al jugador reflexionar y conocerse a sí mismo en momentos de introspección.",
+    bullets: [
+    ]
+  },
+  {
+    title: "Intención",
+    description: "",
+    bullets: [
     ]
   },
   {
     title: "Preparación",
-    description: "Encuentra un espacio cómodo para todos. Si juegas solo, busca un lugar tranquilo para reflexionar.",
+    description: "Encontrá un espacio cómodo. Si jugás solo buscá un lugar tranquilo para reflexionar.",
     bullets: [
       "Reúne a los participantes en círculo.",
       "Asegúrate de que todos vean las preguntas."
     ]
   },
   {
-    title: "Inicio del Juego",
-    description: "Elige quién empieza: puede ser la persona más joven o alguien al azar. El primer jugador responde la pregunta del carrusel.",
-    bullets: []
-  },
-  {
     title: "Modo de Juego",
-    description: "Elige cómo jugar según el momento:",
+    description: "Elegí cómo jugar según el momento:",
     bullets: [
-      "Modo Libre: Responde tú o elige a alguien.",
+      "Me toca: Responde el que giró la ruleta",
+      "Te toca: El que giró la ruleta elige a quién reponde.",
+      "Modo Libre: Responde cualquiera.",
       "Modo Ronda: Todos responden la misma pregunta."
     ]
-  },
-  {
-    title: "Cambio de Turno",
-    description: "Después de responder, pasa al siguiente jugador en orden. ¡Sigan explorando juntos!",
-    bullets: []
   },
   {
     title: "Consejos para Conectar",
