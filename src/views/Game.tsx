@@ -43,7 +43,7 @@ const preguntas: Preguntas = {
     '¿Cuánto peso le das a lo que la gente piensa de vos?',
     '¿A qué deberías prestarle más atención?',
     '¿En qué área de tu vida estás poniendo más energía?',
-    '¿Cuál definirías tu situación actual?',
+    '¿Cómo definirías tu situación actual?',
     '¿Qué es lo peor y mejor de crecer?',
     '¿Qué pensás que tiene de bueno ser adulto/a?',
     'Si tu vida fuera una película, ¿de qué género sería?',
